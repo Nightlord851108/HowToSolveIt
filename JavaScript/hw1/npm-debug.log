@@ -1,0 +1,84 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'fuck' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 verbose config Skipping project config: C:\Users\wto20/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData fuck
+9 silly fetchNamedPackageData fuck
+10 silly mapToRegistry name fuck
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'fuck',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'fuck',
+13 silly mapToRegistry   name: 'fuck',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/fuck
+15 verbose request uri https://registry.npmjs.org/fuck
+16 verbose request no auth needed
+17 info attempt registry request try #1 at 12:58:07
+18 verbose request id f5b6ce9255295b56
+19 http request GET https://registry.npmjs.org/fuck
+20 http 200 https://registry.npmjs.org/fuck
+21 verbose headers { server: 'nginx/1.10.1',
+21 verbose headers   'content-type': 'application/json',
+21 verbose headers   'last-modified': 'Fri, 12 May 2017 22:36:59 GMT',
+21 verbose headers   etag: 'W/"5916390b-1d7"',
+21 verbose headers   'content-encoding': 'gzip',
+21 verbose headers   'cache-control': 'max-age=300',
+21 verbose headers   'content-length': '279',
+21 verbose headers   'accept-ranges': 'bytes',
+21 verbose headers   date: 'Tue, 04 Jul 2017 04:58:04 GMT',
+21 verbose headers   via: '1.1 varnish',
+21 verbose headers   age: '0',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'x-served-by': 'cache-hkg6825-HKG',
+21 verbose headers   'x-cache': 'MISS',
+21 verbose headers   'x-cache-hits': '0',
+21 verbose headers   'x-timer': 'S1499144284.360178,VS0,VE196',
+21 verbose headers   vary: 'Accept-Encoding' }
+22 silly get cb [ 200,
+22 silly get   { server: 'nginx/1.10.1',
+22 silly get     'content-type': 'application/json',
+22 silly get     'last-modified': 'Fri, 12 May 2017 22:36:59 GMT',
+22 silly get     etag: 'W/"5916390b-1d7"',
+22 silly get     'content-encoding': 'gzip',
+22 silly get     'cache-control': 'max-age=300',
+22 silly get     'content-length': '279',
+22 silly get     'accept-ranges': 'bytes',
+22 silly get     date: 'Tue, 04 Jul 2017 04:58:04 GMT',
+22 silly get     via: '1.1 varnish',
+22 silly get     age: '0',
+22 silly get     connection: 'keep-alive',
+22 silly get     'x-served-by': 'cache-hkg6825-HKG',
+22 silly get     'x-cache': 'MISS',
+22 silly get     'x-cache-hits': '0',
+22 silly get     'x-timer': 'S1499144284.360178,VS0,VE196',
+22 silly get     vary: 'Accept-Encoding' } ]
+23 verbose get saving fuck to C:\Users\wto20\AppData\Roaming\npm-cache\registry.npmjs.org\fuck\.cache.json
+24 verbose correctMkdir C:\Users\wto20\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+25 verbose stack TypeError: Cannot convert undefined or null to object
+25 verbose stack     at pickVersionFromRegistryDocument (C:\Program Files\nodejs\node_modules\npm\lib\fetch-package-metadata.js:125:29)
+25 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\iferr\index.js:13:50
+25 verbose stack     at C:\Program Files\nodejs\node_modules\npm\lib\utils\pulse-till-done.js:20:8
+25 verbose stack     at saved (C:\Program Files\nodejs\node_modules\npm\lib\cache\caching-client.js:174:7)
+25 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\polyfills.js:241:18
+25 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+26 verbose cwd C:\Users\wto20\Dropbox\HowToSolveIt\JavaScript\hw1
+27 error Windows_NT 10.0.15063
+28 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "fuck"
+29 error node v6.11.0
+30 error npm  v3.10.10
+31 error Cannot convert undefined or null to object
+32 error If you need help, you may report this error at:
+32 error     <https://github.com/npm/npm/issues>
+33 verbose exit [ 1, true ]
