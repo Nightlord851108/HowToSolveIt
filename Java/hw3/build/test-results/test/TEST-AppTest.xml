@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2018-10-22T09:53:28" hostname="TW-LW80683-M.local" time="0.003">
+<testsuite name="AppTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2018-10-22T10:35:12" hostname="TW-LW80683-M.local" time="0.004">
   <properties/>
   <testcase name="testAddException" classname="AppTest" time="0.0"/>
+  <testcase name="testLengthFunction" classname="AppTest" time="0.001"/>
   <testcase name="testVectorFunction" classname="AppTest" time="0.0"/>
   <testcase name="testAdd" classname="AppTest" time="0.0"/>
   <testcase name="testMax" classname="AppTest" time="0.0"/>
   <testcase name="testMin" classname="AppTest" time="0.0"/>
-  <testcase name="testInnerProductException" classname="AppTest" time="0.0"/>
+  <testcase name="testInnerProductException" classname="AppTest" time="0.001"/>
   <testcase name="testAddThreeDimension" classname="AppTest" time="0.0"/>
   <testcase name="testInnerProductThreeDimension" classname="AppTest" time="0.0"/>
   <testcase name="testAddVector" classname="AppTest" time="0.0"/>
   <testcase name="testAppHasAGreeting" classname="AppTest" time="0.0"/>
   <testcase name="testSubstract" classname="AppTest" time="0.0"/>
+  <testcase name="testVectorLength" classname="AppTest" time="0.0"/>
   <testcase name="testMultiply" classname="AppTest" time="0.0"/>
+  <testcase name="testScalar" classname="AppTest" time="0.0"/>
   <testcase name="testInnerProduct" classname="AppTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

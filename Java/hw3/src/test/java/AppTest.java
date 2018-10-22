@@ -5,6 +5,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
+    static final double DELTA = 0.0001;   
+  
     @Test public void testAppHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
@@ -54,5 +56,33 @@ public class AppTest {
         int[] w = new int[]{2, 3}; 
         assertEquals(App.innerProduct(u, App.addVector(v, w)), 
            App.innerProduct(u, v) + App.innerProduct(u, w)); 
+    }
+
+    @Test
+    public void testVectorLength() {
+        int[] a = new int[] {3, 4}; 
+        assertEquals(5.0, App.vectorLength(a), DELTA); 
+    }
+
+    @Test 
+    public void testScalar() {
+        int a = 5; 
+        int[] u = {1, 2};
+        assertArrayEquals(new int[] {5, 10}, App.scalar(u, a)); 
+    }
+
+    @Test 
+    public void testLengthFunction() throws Exception {
+        int[] u = {4, 0}; 
+        int[] v = {0, 3}; 
+        int[] sum = App.addVector(u, v); 
+        double result1 = Math.pow(App.vectorLength(sum), 2); 
+        
+        double u_2 = Math.pow(App.vectorLength(u), 2); 
+        double v_2 = Math.pow(App.vectorLength(v), 2); 
+        int uv = App.innerProduct(u, v); 
+        double result2 = u_2 + v_2 + 2 * uv; 
+
+        assertEquals(result1, result2, DELTA);
     }
 }
