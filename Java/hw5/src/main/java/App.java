@@ -9,4 +9,26 @@ public class App {
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
     }
+
+    public static Vector sum(Vector u, Vector v) throws Exception {
+        if (u.getDimension() != v.getDimension())
+           throw new Exception("Dimension error");
+        int n = v.getDimension();
+        double[] ans = new double[n];
+        for (int i = 0; i < n; ++i) {
+            ans[i] = v.getComponent(i+1) + u.getComponent(i+1);
+        }
+        return new Vector(ans);
+    }
+
+    public static double innerProduct(Vector u, Vector v) throws Exception {
+        if (u.getDimension() != v.getDimension())
+            throw new Exception("Dimension Error");
+        int n = v.getDimension();
+        double sum = 0;
+        for (int i = 0; i < n; ++i) {
+            sum += u.getComponent(i+1) * v.getComponent(i+1);
+        }
+        return sum;
+    }
 }
