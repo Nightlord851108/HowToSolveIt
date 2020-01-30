@@ -3,3 +3,4 @@ obj
 build
 __pycache__
 go.sum
+__MACOSX
